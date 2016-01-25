@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@drawable/technical">
+     
+
+     <LinearLayout android:layout_width="fill_parent" 
+         android:layout_height="40dp" 
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal"
+         android:weightSum="1">
+
+         <TextView
+             android:id="@+id/tvsomething"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.8"
+             android:layout_alignParentLeft="true"
+             android:text="Notification Sync"
+             android:textSize="25dp"
+             android:layout_marginLeft="5dp"
+             android:textStyle="bold" />
+         <ToggleButton
+             android:id="@+id/checkBox11"
+             android:layout_width="80dp"
+             android:layout_height="25dp"
+             android:layout_alignParentRight="true"
+             android:textOn=""
+             android:layout_weight="0.2"
+             android:textOff=""
+             android:layout_marginRight="10dp"
+             android:background="@drawable/my_toggle_button" />
+
+
+     </LinearLayout>
+     <ScrollView 
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent" 
+         >
+     <LinearLayout android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:orientation="vertical"
+         
+        >
+     
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick the Time Interval (after this time interval Internet will be turned ON)"
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp" />
+    <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:orientation="horizontal"
+     android:layout_marginTop="6dp"
+      android:layout_marginLeft="8dp">
+
+        <EditText
+            android:id="@+id/et11"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"  >
+			
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/ib11"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/time"
+            android:background="@null"
+            android:layout_marginRight="20dp"
+            />
+        
+     </LinearLayout>
+    <TextView
+    android:id="@+id/tvlast11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:visibility="invisible"
+     android:textSize="20dp"
+      android:layout_marginLeft="8dp"
+    android:text="Please Enable Automatic data to see the available options"
+    android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="How long would you like to enable the Internet"
+         android:textSize="20dp"
+          android:layout_marginLeft="8dp"
+        />
+
+    <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+      android:layout_marginLeft="8dp">
+
+        <EditText
+            android:id="@+id/etinput11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="phone" 
+            android:hint="Enter here">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="minutes"
+           android:textSize="20dp"
+            android:textStyle="italic" />
+        
+     </LinearLayout>
+<LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:layout_marginTop="6dp">
+    <Button
+        android:id="@+id/benter11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_button"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Proceed"
+         android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automatic Nofication Synchronization"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvvhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     It is an Automatic Notification Synchronization Application which is used to synchronize the notifications from the applications which uses Internet. \n \n    To prevent the wastage of battery power while not using the internet meanwhile need to have notifications preloaded for later purpose,  it can be made active. \n \n.    To synchronize messages from Applications which uses Internet(whatsapp, facebook, etc.), one can automatically set a time interval for a particular period, within which the notifications and messages can be synchronized. \n \n    Here goes the procedure \n      1. You have to select the type of Internet connection you want to use(Wifi or 2G/3G).\n      2. Then you have to specify the time interval to enable data access i.e after the particular time interval the internet will be enabled for a speficed amount of time and data will automatically turned OFF. \n   It continuously turn ON and turn OFF the internet untill user disables the service." />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.adsonik.autosync"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+
+    >
+    <com.example.gdataswitcher.LovelyView1
+        android:id="@+id/custView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGreen"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:text="How would you like open the internet?" />
+
+ 
+    <com.example.gdataswitcher.ColoredButton
+        android:id="@+id/btnRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_selector2"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:text="  2G/3G  "
+         />
+
+    <com.example.gdataswitcher.ColoredButton
+        android:id="@+id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_selector2"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:text="   Wifi   " />
+
+    <TextView
+        android:id="@+id/tvhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnRed"
+        android:layout_marginBottom="22dp"
+        android:textSize="20dp"
+        android:text="Need help?" />
+
+</RelativeLayout>
